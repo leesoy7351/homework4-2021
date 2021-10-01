@@ -29,12 +29,12 @@ body{
   font-size: 16px;
   margin: 1.2em;
   background-size: cover ;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
 
   /*Req 1*/
   font-family: Andika, sans-serif;
-  background-image: url("../images/pigeon-background.jpeg");
+  background-image: url("images/pigeon-background.jpeg");
   background-color: #DDDDDD;
 }
 
@@ -51,12 +51,12 @@ h1{
 p{
   font-size: 15px;
   position: relative;
-  top: 15px;
+  padding-top: 15px;
 }
 
 a[href]{
   font-size: 16px;
-  color: #C12258;
+  color: #B21F50;
   text-decoration-style: wavy;
 }
 
@@ -78,7 +78,7 @@ td{
 
 .colhead{
   color: #FFFFFF;
-  column-width: min(125px);
+  min-width: 125px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -129,17 +129,18 @@ tbody tr:nth-child(even){
   background-color: #D1D1D1;
 }
 
-tbody tr:nth-child(even):hover{
-  background-color: rgb(126, 8, 37, 0.25);
-}
-
 tbody tr:nth-child(odd){
   background-color: transparent;
+}
+
+tbody tr:hover{
+  background-color: rgb(126, 8, 37, 0.25);
 }
 
 footer{
   position:fixed;
   bottom: 0;
+  left: 0;
   width:100%;
   background:#000000;
   text-align:center;
